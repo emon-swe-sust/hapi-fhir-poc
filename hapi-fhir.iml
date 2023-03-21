@@ -85,5 +85,6 @@
     <orderEntry type="library" name="Maven: ca.uhn.hapi.fhir:hapi-fhir-structures-dstu3:2.3" level="project" />
     <orderEntry type="library" name="Maven: xpp3:xpp3_min:1.1.4c" level="project" />
     <orderEntry type="library" name="Maven: ca.uhn.hapi.fhir:hapi-fhir-validation-resources-dstu3:2.3" level="project" />
+    <orderEntry type="library" name="Maven: org.json:json:20180130" level="project" />
   </component>
 </module>
