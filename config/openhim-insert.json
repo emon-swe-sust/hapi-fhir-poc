@@ -1,0 +1,351 @@
+{
+  "Users": [
+    {
+      "provider": "token",
+      "groups": [
+        "admin"
+      ],
+      "firstname": "Super",
+      "surname": "User",
+      "email": "root@openhim.org",
+      "passwordAlgorithm": null,
+      "passwordHash": null,
+      "passwordSalt": null,
+      "expiry": null,
+      "locked": false,
+      "token": null,
+      "tokenType": null
+    }
+  ],
+  "Clients": [
+    {
+      "roles": [
+        "EMON"
+      ],
+      "clientID": "560",
+      "name": "Emon",
+      "passwordAlgorithm": "sha512",
+      "passwordSalt": "db990eb4a64312fe1991daf3e62f8d09",
+      "passwordHash": "9fcb3c568f6be226ebed72fba3d24fae5e2c444704670b9599d2128bfe246c95af4cbd040bff7df8ceb1b73b3b427c0c6b016594c93c829c639a526e62c6d64d"
+    }
+  ],
+  "Channels": [
+    {
+      "methods": [
+        "GET"
+      ],
+      "type": "http",
+      "allow": [],
+      "whitelist": [],
+      "authType": "public",
+      "matchContentTypes": [],
+      "properties": [],
+      "txViewAcl": [],
+      "txViewFullAcl": [],
+      "txRerunAcl": [],
+      "status": "enabled",
+      "rewriteUrls": false,
+      "addAutoRewriteRules": true,
+      "autoRetryEnabled": false,
+      "autoRetryPeriodMinutes": 60,
+      "routes": [
+        {
+          "type": "http",
+          "status": "enabled",
+          "forwardAuthHeader": true,
+          "name": "Fetch Patient",
+          "secured": false,
+          "host": "host",
+          "port": 8081,
+          "path": "",
+          "pathTransform": "",
+          "primary": true,
+          "username": "",
+          "password": ""
+        }
+      ],
+      "requestBody": true,
+      "responseBody": true,
+      "rewriteUrlsConfig": [],
+      "name": "Fetch Patient",
+      "urlPattern": "\\/api\\/v1\\/patients\\/[0-9]",
+      "matchContentRegex": null,
+      "matchContentXpath": null,
+      "matchContentValue": null,
+      "matchContentJson": null,
+      "pollingSchedule": null,
+      "tcpHost": null,
+      "tcpPort": null,
+      "updatedBy": {
+        "id": "6423d9e0c75cb30013abb533",
+        "name": "Super User"
+      },
+      "alerts": []
+    },
+    {
+      "methods": [
+        "POST"
+      ],
+      "type": "http",
+      "allow": [],
+      "whitelist": [],
+      "authType": "public",
+      "matchContentTypes": [],
+      "properties": [],
+      "txViewAcl": [],
+      "txViewFullAcl": [],
+      "txRerunAcl": [],
+      "status": "enabled",
+      "rewriteUrls": false,
+      "addAutoRewriteRules": true,
+      "autoRetryEnabled": false,
+      "autoRetryPeriodMinutes": 60,
+      "routes": [
+        {
+          "type": "http",
+          "status": "enabled",
+          "forwardAuthHeader": true,
+          "name": "Create Patient",
+          "secured": false,
+          "host": "host",
+          "port": 8081,
+          "path": "",
+          "pathTransform": "",
+          "primary": true,
+          "username": "",
+          "password": ""
+        }
+      ],
+      "requestBody": true,
+      "responseBody": true,
+      "rewriteUrlsConfig": [],
+      "name": "Create Patient",
+      "urlPattern": "^/api/v1/patients$",
+      "matchContentRegex": null,
+      "matchContentXpath": null,
+      "matchContentValue": null,
+      "matchContentJson": null,
+      "pollingSchedule": null,
+      "tcpHost": null,
+      "tcpPort": null,
+      "updatedBy": {
+        "id": "6423d9e0c75cb30013abb533",
+        "name": "Super User"
+      },
+      "alerts": []
+    },
+    {
+      "methods": [
+        "GET",
+        "POST"
+      ],
+      "type": "http",
+      "allow": [],
+      "whitelist": [],
+      "authType": "public",
+      "matchContentTypes": [],
+      "properties": [],
+      "txViewAcl": [],
+      "txViewFullAcl": [],
+      "txRerunAcl": [],
+      "status": "enabled",
+      "rewriteUrls": false,
+      "addAutoRewriteRules": true,
+      "autoRetryEnabled": false,
+      "autoRetryPeriodMinutes": 60,
+      "routes": [
+        {
+          "type": "http",
+          "status": "enabled",
+          "forwardAuthHeader": true,
+          "name": "Create Encounter",
+          "secured": false,
+          "host": "host",
+          "port": 8082,
+          "path": "",
+          "pathTransform": "",
+          "primary": true,
+          "username": "",
+          "password": ""
+        }
+      ],
+      "requestBody": true,
+      "responseBody": true,
+      "rewriteUrlsConfig": [],
+      "name": "Create & Fetch Encounter",
+      "urlPattern": "\\/v2\\/patients\\/[0-9]+\\/encounters$",
+      "matchContentRegex": null,
+      "matchContentXpath": null,
+      "matchContentValue": null,
+      "matchContentJson": null,
+      "pollingSchedule": null,
+      "tcpHost": null,
+      "tcpPort": null,
+      "updatedBy": {
+        "id": "6423d9e0c75cb30013abb533",
+        "name": "Super User"
+      },
+      "alerts": []
+    },
+    {
+      "methods": [
+        "POST"
+      ],
+      "type": "http",
+      "allow": [],
+      "whitelist": [],
+      "authType": "public",
+      "matchContentTypes": [],
+      "properties": [],
+      "txViewAcl": [],
+      "txViewFullAcl": [],
+      "txRerunAcl": [],
+      "status": "enabled",
+      "rewriteUrls": false,
+      "addAutoRewriteRules": true,
+      "autoRetryEnabled": false,
+      "autoRetryPeriodMinutes": 60,
+      "routes": [
+        {
+          "type": "http",
+          "status": "enabled",
+          "forwardAuthHeader": true,
+          "name": "signin",
+          "secured": false,
+          "host": "host",
+          "port": 8084,
+          "path": "",
+          "pathTransform": "",
+          "primary": true,
+          "username": "",
+          "password": ""
+        }
+      ],
+      "requestBody": true,
+      "responseBody": true,
+      "rewriteUrlsConfig": [],
+      "name": "Sign In",
+      "urlPattern": "^/signin$",
+      "matchContentRegex": null,
+      "matchContentXpath": null,
+      "matchContentValue": null,
+      "matchContentJson": null,
+      "pollingSchedule": null,
+      "tcpHost": null,
+      "tcpPort": null,
+      "updatedBy": {
+        "id": "6423d9e0c75cb30013abb533",
+        "name": "Super User"
+      },
+      "alerts": []
+    },
+    {
+      "methods": [
+        "PUT"
+      ],
+      "type": "http",
+      "allow": [],
+      "whitelist": [],
+      "authType": "public",
+      "matchContentTypes": [],
+      "properties": [],
+      "txViewAcl": [],
+      "txViewFullAcl": [],
+      "txRerunAcl": [],
+      "status": "enabled",
+      "rewriteUrls": false,
+      "addAutoRewriteRules": true,
+      "autoRetryEnabled": false,
+      "autoRetryPeriodMinutes": 60,
+      "routes": [
+        {
+          "type": "http",
+          "status": "enabled",
+          "forwardAuthHeader": true,
+          "name": "Update Encounters",
+          "secured": false,
+          "host": "host",
+          "port": 8082,
+          "path": "",
+          "pathTransform": "",
+          "primary": true,
+          "username": "",
+          "password": ""
+        }
+      ],
+      "requestBody": true,
+      "responseBody": true,
+      "rewriteUrlsConfig": [],
+      "name": "Update Encounter",
+      "matchContentRegex": null,
+      "matchContentXpath": null,
+      "matchContentValue": null,
+      "matchContentJson": null,
+      "urlPattern": "^\\/v2\\/patients\\/[0-9]+\\/encounters\\/[\\w-]+$$",
+      "pollingSchedule": null,
+      "tcpHost": null,
+      "tcpPort": null,
+      "updatedBy": {
+        "id": "6423d9e0c75cb30013abb533",
+        "name": "Super User"
+      },
+      "alerts": []
+    },
+    {
+      "methods": [
+        "POST"
+      ],
+      "type": "http",
+      "allow": [
+        "EMON"
+      ],
+      "whitelist": [],
+      "authType": "private",
+      "matchContentTypes": [],
+      "properties": [],
+      "txViewAcl": [],
+      "txViewFullAcl": [],
+      "txRerunAcl": [],
+      "status": "enabled",
+      "rewriteUrls": false,
+      "addAutoRewriteRules": true,
+      "autoRetryEnabled": false,
+      "autoRetryPeriodMinutes": 60,
+      "routes": [
+        {
+          "type": "http",
+          "status": "enabled",
+          "forwardAuthHeader": true,
+          "name": "Mediator",
+          "secured": false,
+          "host": "host",
+          "port": 8800,
+          "path": "",
+          "pathTransform": "",
+          "primary": true,
+          "username": "",
+          "password": ""
+        }
+      ],
+      "requestBody": true,
+      "responseBody": true,
+      "rewriteUrlsConfig": [],
+      "name": "Encounter Mediator",
+      "urlPattern": "\\/encounter-mediator\\/[0-9]",
+      "matchContentRegex": null,
+      "matchContentXpath": null,
+      "matchContentValue": null,
+      "matchContentJson": null,
+      "pollingSchedule": null,
+      "tcpHost": null,
+      "tcpPort": null,
+      "updatedBy": {
+        "id": "6423d9e0c75cb30013abb533",
+        "name": "Super User"
+      },
+      "alerts": []
+    }
+  ],
+  "Mediators": [],
+  "ContactGroups": []
+}
